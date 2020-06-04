@@ -1,0 +1,33 @@
+# /etc/conf.d/pyeongtaekcoind: config file for /etc/init.d/pyeongtaekcoind
+
+# Config file location
+#PYEONGTAEKCOIND_CONFIGFILE="/etc/pyeongtaekcoin/pyeongtaekcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $PYEONGTAEKCOIND_USER)
+#PYEONGTAEKCOIND_PIDDIR="/var/run/pyeongtaekcoind"
+
+# What filename to give the pidfile
+#PYEONGTAEKCOIND_PIDFILE="${PYEONGTAEKCOIND_PIDDIR}/pyeongtaekcoind.pid"
+
+# Where to write pyeongtaekcoind data (be mindful that the blockchain is large)
+#PYEONGTAEKCOIND_DATADIR="/var/lib/pyeongtaekcoind"
+
+# User and group to own pyeongtaekcoind process
+#PYEONGTAEKCOIND_USER="pyeongtaekcoin"
+#PYEONGTAEKCOIND_GROUP="pyeongtaekcoin"
+
+# Path to pyeongtaekcoind executable
+#PYEONGTAEKCOIND_BIN="/usr/bin/pyeongtaekcoind"
+
+# Nice value to run pyeongtaekcoind under
+#PYEONGTAEKCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#PYEONGTAEKCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for pyeongtaekcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+PYEONGTAEKCOIND_SIGTERM_TIMEOUT=60
